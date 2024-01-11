@@ -6,9 +6,11 @@ class Principal:
 
     def __init__(self, master):
         self.nossaTela = master
-        self.lblRelogio = tk.Label(
-            self.nossaTela, font=('calibri', 30, 'bold'), fg='black', anchor='center')
+        self.nossaTela.configure(bg='black')
         
+        self.lblRelogio = tk.Label(
+            self.nossaTela, font=('calibri', 30, 'bold'),  bg='black', fg='white', anchor='center')
+
         self.nossaTela.title('Clock')
 
         self.lblRelogio.pack(pady=25, padx=25)
